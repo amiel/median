@@ -63,6 +63,7 @@ mod atomic64 {
     //type that codifies that for rust
     impl_atomic!(f64, Float64);
     impl_atomic!(max_sys::t_atom_long, Int64);
+    impl_atomic!(max_sys::t_bool, Bool);
 
     impl From<i64> for Int64 {
         fn from(v: i64) -> Self {
